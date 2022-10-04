@@ -1,0 +1,28 @@
+:root {
+    --clr-primary-200: ;
+    --clr-primary-400: ;
+    --clr-primary-600: ;
+    --clr-primary-900: ;
+
+    --clr-neutral-100: ;
+    --clr-neutral-500: ;
+    --clr-neutral-900: ;
+
+    --clr-disabled: ;
+    --clr-label: ;
+    --clr-text: ;
+
+    --fc-primary: ;
+    --fc-bold: ;
+
+    --ff-primary: ;
+    --ff-bold: ;
+    --ff-semibold: ; 
+}
+
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p {
+    margin: 0
+}
