@@ -1,11 +1,12 @@
+/* root designs */
 :root {
     --clr-primary-200: ;
     --clr-primary-400: ;
-    --clr-primary-600: ;
-    --clr-primary-900: ;
+    --clr-primary-600: #D9D9D9;
+    --clr-primary-900: #B9B3B3;
 
-    --clr-neutral-100: ;
-    --clr-neutral-500: ;
+    --clr-neutral-100: #FFFFFF;
+    --clr-neutral-500: #000000;
     --clr-neutral-900: ;
 
     --clr-disabled: ;
@@ -15,14 +16,98 @@
     --fc-primary: ;
     --fc-bold: ;
 
-    --ff-primary: ;
-    --ff-bold: ;
-    --ff-semibold: ; 
+    --ff-primary: 'Mulish', sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+    
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+    
+    --fs-300: 0.5rem;
+    --fs-400: 0.625rem;
+    --fs-500: 0.75rem;
+    --fs-600: 1rem;
+    --fs-700: 1.25rem;
+    --fs-800: 1.5rem;
+    --fs-900: 2rem;
+}
+/* Powell reset*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
 }
-body, h1, h2, h3, p {
-    margin: 0
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/*Design*/
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+}
+
+.bg-color1 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-500);
+}
+
+.bg-color2 {
+    font-size: var(--fs-600);
+    background-color: var(--clr-primary-900);
+}
+
+.bg-color3 {
+    font-size: var(--fs-600);
+    background-color: var(--clr-primary-600);
+}
+
+.bg-color4 {
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-500);
+}
+
+.title {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-900);
+}
+
+.heading {
+    font-size: var(--fs-800);
+}
+
+.sec-heading {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
 }
