@@ -9,23 +9,18 @@
     --clr-neutral-500: #000000;
     --clr-neutral-900: ;
 
-    --clr-disabled: ;
-    --clr-label: ;
-    --clr-text: ;
-
     --fc-primary: ;
-    --fc-bold: ;
+    --fc-label: ;
+    --fc-disbaled: ;
 
-    --ff-primary: 'Mulish', sans-serif;
     --fw-light: 300;
     --fw-regular: 400;
     --fw-semibold: 600;
     --fw-bold: 700;
     --fw-black: 900;
     
-    --ff-body: var(--ff-primary);
-    --ff-heading: var(--ff-primary);
-    
+    --ff-primary: 'Mulish', sans-serif;
+
     --fs-300: 0.5rem;
     --fs-400: 0.625rem;
     --fs-500: 0.75rem;
