@@ -1,4 +1,4 @@
-/* root designs */
+/* root designs */  
 :root {
     --clr-primary-200: ;
     --clr-primary-400: ;
@@ -21,13 +21,10 @@
     
     --ff-primary: 'Mulish', sans-serif;
 
-    --fs-300: 0.5rem;
-    --fs-400: 0.625rem;
-    --fs-500: 0.75rem;
-    --fs-600: 1rem;
-    --fs-700: 1.25rem;
-    --fs-800: 1.5rem;
-    --fs-900: 2rem;
+    --fs-primary: 1rem;
+    --fs-subheading: 1.17rem;
+    --fs-heading: 1.5rem;
+    --fs-title: 2rem;
 }
 /* Powell reset*/
 *,
@@ -55,7 +52,9 @@ body {
 
 body {
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: 1.6;  
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
 }
 
 img,
@@ -63,13 +62,27 @@ picture {
     max-width: 100%;
     display: block;
 }
-/*Design*/
 
-body {
+h1, h2, h3 {
     font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-black);
+    line-height: 1;
+    margin-bottom: 1em;
 }
 
+h2, h3, p {
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+/*Design*/
 .bg-color1 {
     font-size: var(--fs-600);
     font-weight: var(--fw-bold);
@@ -93,16 +106,7 @@ body {
     background-color: var(--clr-neutral-500);
 }
 
-.title {
+.footer-heading {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-900);
-}
-
-.heading {
-    font-size: var(--fs-800);
-}
-
-.sec-heading {
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-600);
+    font-size: var(--fs-subheading);
 }
