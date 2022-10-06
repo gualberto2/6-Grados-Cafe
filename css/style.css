@@ -99,6 +99,7 @@ body {
 }
 
 .heading {
+    font-weight: var(--fw-bold);
     font-size: var(--fs-800);
 }
 
