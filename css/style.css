@@ -83,11 +83,10 @@ section {
 }
 
 /*Design*/
-.bg-color1 {
-    font-size: var(--fs-600);
-    font-weight: var(--fw-bold);
-    color: var(--clr-neutral-100);
-    background-color: var(--clr-neutral-500);
+.bg-img1 {
+    background-image:url(../pics/bg-section1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-color2 {
