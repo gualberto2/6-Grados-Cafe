@@ -1,13 +1,12 @@
 /* root designs */  
 :root {
-    --clr-primary-200: ;
     --clr-primary-400: ;
     --clr-primary-600: #D9D9D9;
     --clr-primary-900: #B9B3B3;
 
-    --clr-neutral-100: #FFFFFF;
-    --clr-neutral-500: #000000;
-    --clr-neutral-900: ;
+    --clr-neutral-white: #FFFFFF;
+    --clr-neutral-black: #000000;
+
 
     --fc-primary: ;
     --fc-label: ;
@@ -90,8 +89,7 @@ section {
 }
 
 .bg-color2 {
-    font-size: var(--fs-600);
-    background-color: var(--clr-primary-900);
+    background-color: ;
 }
 
 .bg-color3 {
