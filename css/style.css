@@ -81,29 +81,96 @@ section {
     padding: 3rem 0;
 }
 
-/*Design*/
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 34rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+}   
+/*Design, most colors you see are placeholders, actual font/background colors will be selected later on in the future. */
+/* nav */
+
+/* section 1 */
 .bg-img1 {
     background-image:url(../pics/bg-section1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
+.bg-img1 p, .bg-img1 h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* section 2 */
 .bg-color2 {
-    background-color: ;
+    background-color: gray;
 }
 
+/* section 3 */
 .bg-color3 {
     font-size: var(--fs-600);
     background-color: var(--clr-primary-600);
 }
 
+/* section 4 */
 .bg-color4 {
     font-size: var(--fs-500);
     color: var(--clr-neutral-100);
     background-color: var(--clr-neutral-500);
 }
 
+/* section 5 (footer) */
 .footer-heading {
     font-weight: var(--fw-bold);
     font-size: var(--fs-subheading);
+}
+
+/* media queries go here */
+@media (max-width: 40em) {
+    header {
+        display:flex;
+        flex-direction: column;
+    }
+    header a {
+        text-align: center;
+    }
+    .split {
+        flex-direction: column;
+    }
+    .container-footer {
+        flex-direction: column;
+    }x`
+    .ul-footer {
+        flex-direction: row;
+    }
+}
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+    section {
+        padding: 7em 0; 
+    }
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
+    .bg-color4 .split {
+        flex-direction: row-reverse;
+    }
+    .bg-color4 .split > * {
+        margin-left: 0em;
+        margin-right: 2em;
+    }
 }
