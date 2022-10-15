@@ -1,16 +1,21 @@
 /* root designs */  
 :root {
-  --clr-primary-400: ;
-  --clr-primary-600: #D9D9D9;
-  --clr-primary-900: #B9B3B3;
+  --clr-primary-400: #;
+  --clr-primary-600: #;
+  --clr-primary-900: #;
 
-  --clr-neutral-white: #FFFFFF;
-  --clr-neutral-black: #000000;
+  --clr-background-300: #D9D9D9;
+  --clr-background-600: #DADDD8;
+  --clr-background-900: #adb5bd;
+
+  --clr-neutral-white: #FAFAFF;
+  --clr-neutral-black: #252525;
 
 
   --fc-primary: ;
   --fc-label: ;
   --fc-disbaled: ;
+  --fc-hover: #adadad;
 
   --fw-light: 300;
   --fw-regular: 400;
@@ -56,6 +61,9 @@ body {
   font-weight: var(--fw-regular);
 }
 
+a{
+  text-decoration: none;
+}
 img,
 picture {
   max-width: 100%;
@@ -112,13 +120,19 @@ section {
 
 /* section 2 */
 .bg-color2 {
-  background-color: gray;
+  background-color: var(--clr-background-300);
+}
+.bg-color2 img {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: #222c2a;
+  margin-bottom: 1em;
 }
 
 /* section 3 */
 .bg-color3 {
   font-size: var(--fs-600);
-  background-color: var(--clr-primary-600);
+  background-color: var(--clr-background-900);
 }
 
 /* section 4 */
@@ -127,11 +141,49 @@ section {
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-500);
 }
+.bg-color4 img {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: #222c2a;
+  margin-bottom: 1em;
+}
 
 /* section 5 (footer) */
+footer {
+  background-color: var(--clr-neutral-black);
+}
+.footerleft, .footermiddle, .footerright {
+  display: flex;
+}
+.fflexcontain {
+  display: flex;
+  justify-content: space-around;
+}
+.fflex {
+  display: flex;
+}
+.footercolumn {
+  display: flex;
+}
+footer p{
+  color: var(--clr-neutral-white);
+  text-align: center;
+  border-bottom: 1px solid var(--clr-neutral-white);
+  border-radius: 10%;
+}
+footer a{
+  color: var(--clr-neutral-white);
+  text-align: center;
+}
+footer a:hover {
+  color: var(--fc-hover)
+}
 .footer-heading {
   font-weight: var(--fw-bold);
   font-size: var(--fs-subheading);
+}
+.inputemail {
+  margin: 0 auto;
 }
 
 /* media queries go here */
@@ -146,12 +198,19 @@ section {
   .split {
       flex-direction: column;
   }
-  .container-footer {
+  .footerleft, .footermiddle, .footerright {
       flex-direction: column;
   }
-  .ul-footer {
-      flex-direction: row;
+  .fflexcontain {
+      flex-direction: column;
   }
+  .fflex {
+      flex-direction: column;
+  }
+  .footercolumn {
+      flex-direction: column;
+  }
+
 }
 @media (min-width: 40em) {
   .split {
@@ -172,5 +231,17 @@ section {
   .bg-color4 .split > * {
       margin-left: 0em;
       margin-right: 2em;
+  }
+  .footerleft, .footermiddle, .footerright {
+      flex-direction: column;
+  }
+  .fflexcontain {
+      flex-direction: row;
+  }
+  .footercolumn {
+      flex-direction: column;
+  }
+  .fflex {
+      flex-direction: column;
   }
 }
