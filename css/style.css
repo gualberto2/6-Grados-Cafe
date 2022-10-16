@@ -51,7 +51,6 @@ ol[role="list"] {
 html,
 body {
   height: 100%;
-
 }
 
 body {
@@ -61,7 +60,7 @@ body {
   font-weight: var(--fw-regular);
 }
 
-a{
+a{ 
   text-decoration: none;
 }
 img,
@@ -103,8 +102,33 @@ section {
   flex-direction: row;
 }   
 /*Design, most colors you see are placeholders, actual font/background colors will be selected later on in the future. */
+/* grid stuff */
 /* nav */
-
+header {
+  padding-top: 0.4em;
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: auto; 
+  grid-auto-rows: auto; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 0px 2%; 
+  grid-template-areas: 
+    "pfp searchbar nav order"; 
+}
+.navbar-1{
+  justify-self: center; 
+  align-self: center; 
+  grid-area: pfp; 
+}
+.navbar-3 {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: nav; 
+}
+.sixgradospfp {
+  height: 6em;
+}
 /* section 1 */
 .bg-img1 {
   background-image:url(../pics/bg-section1.jpg);
@@ -115,7 +139,7 @@ section {
 
 .bg-img1 p, .bg-img1 h1 {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* section 2 */
@@ -149,8 +173,12 @@ section {
 }
 
 /* section 5 (footer) */
-footer {
+.bg-color5 {
+  padding-top: 2em;
   background-color: var(--clr-neutral-black);
+}
+footer {
+
 }
 .footerleft, .footermiddle, .footerright {
   display: flex;
