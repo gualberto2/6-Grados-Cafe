@@ -298,7 +298,29 @@ footer a:hover {
  .gridsec2 {
   grid-area: img
  }
-
+ .bg-color4 {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 24% 24% 24% 24%; 
+  grid-template-rows: 24% 24% 24% 24%; 
+  gap: 1% 2%;
+  grid-template-areas: 
+  "img img img img"
+  "img img img img"
+  "img img img img"
+  "img img img img"; 
+ }
+ .gridsec4 {
+  grid-area: img;
+ }
+ .fflex {
+  padding-bottom: 1.4em;
+ }
+ .footer-heading {
+  margin-bottom: 0.2em;
+ }
 }
 /* tablet & beyond */
 @media (min-width: 40em) {
