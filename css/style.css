@@ -260,6 +260,8 @@ footer a:hover {
   header {
       display:flex;
       flex-direction: column;
+      padding-bottom: 0.2em;
+      gap: 0.5em;
   }
   header a {
       text-align: center;
@@ -288,17 +290,14 @@ footer a:hover {
     grid-template-rows: 24% 24% 24% 24%; 
     gap: 1% 2%;
     grid-template-areas: 
-    ". img img ."
-    ". . . ."
-    ". txt txt ."
-    ". . . ."; 
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    "img img img img"; 
   }
-  .sec2img {
-    grid-area: img  ;
-  }
-  .sec2text {
-    grid-area: txt;
-  }
+ .gridsec2 {
+  grid-area: img
+ }
 
 }
 /* tablet & beyond */
