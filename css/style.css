@@ -31,13 +31,22 @@
   --fw-bold: 700;
   --fw-black: 900;
   
+  --ff-title: "heading";
   --ff-primary: 'Mulish', sans-serif;
 
   --fs-primary: 1rem;
   --fs-subheading: 1.17rem;
   --fs-heading: 1.5rem;
   --fs-title: 2rem;
+
+
 }
+/*fonts*/
+@font-face {
+  font-family: "heading";
+  src: url(../fonts/headings/ElSkeleto-ZVEGx.otf);
+}
+
 /* Powell reset*/
 *,
 *::before,
@@ -279,16 +288,16 @@ footer a:hover {
     grid-template-rows: 24% 24% 24% 24%; 
     gap: 1% 2%;
     grid-template-areas: 
-    ". image image ."
+    ". img img ."
     ". . . ."
-    ". text text ."
+    ". txt txt ."
     ". . . ."; 
   }
   .sec2img {
-    grid-area: image;
+    grid-area: img  ;
   }
   .sec2text {
-    grid-area: text;
+    grid-area: txt;
   }
 
 }
