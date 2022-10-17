@@ -1,12 +1,16 @@
 /* root designs */  
 :root {
-  --clr-primary-400: #;
-  --clr-primary-600: #;
-  --clr-primary-900: #;
+  --clr-yellow-400: #fef9c2;
+  --clr-yellow-600: #fef480;
+  --clr-yellow-900: #fde90d;
 
-  --clr-background-300: #D9D9D9;
-  --clr-background-600: #DADDD8;
-  --clr-background-900: #adb5bd;
+  --clr-red-400: #d85a5a;
+  --clr-red-600: #c62f2f;
+  --clr-red-900: #872020; 
+
+  --clr-background-300: #fffceb;
+  --clr-background-600: #ffd60a;
+  --clr-background-900: #292200;
 
   --clr-neutral-white: #FAFAFF;
   --clr-neutral-black: #252525;
@@ -175,6 +179,7 @@ header {
 /* section 5 (footer) */
 .bg-color5 {
   padding-top: 2em;
+  padding-bottom: 2em;
   background-color: var(--clr-neutral-black);
 }
 footer {
