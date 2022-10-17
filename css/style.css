@@ -15,11 +15,15 @@
   --clr-neutral-white: #FAFAFF;
   --clr-neutral-black: #252525;
 
+  --fc-black-primary: #252525;
+  --fc-black-label: #3D3D3D;
+  --fc-black-disabled: #666666;
+  --fc-black-hover: #D6D6D6;
 
-  --fc-primary: ;
-  --fc-label: ;
-  --fc-disbaled: ;
-  --fc-hover: #adadad;
+  --fc-white-primary: #FAFAFF;
+  --fc-white-label: #f5f5f5;
+  --fc-white-disabled: #cccccc;
+  --fc-white-hover: #adadad;
 
   --fw-light: 300;
   --fw-regular: 400;
