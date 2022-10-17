@@ -16,9 +16,9 @@
   --clr-neutral-black: #252525;
 
   --fc-black-primary: #252525;
-  --fc-black-label: #3D3D3D;
-  --fc-black-disabled: #666666;
-  --fc-black-hover: #D6D6D6;
+  --fc-black-label: #474747;
+  --fc-black-disabled: #333;
+  --fc-black-hover: #525252;
 
   --fc-white-primary: #FAFAFF;
   --fc-white-label: #f5f5f5;
@@ -68,7 +68,7 @@ body {
   font-weight: var(--fw-regular);
 }
 
-a{ 
+a { 
   text-decoration: none;
 }
 img,
@@ -109,11 +109,11 @@ section {
   display: flex;
   flex-direction: row;
 }   
+
+
 /*Design, most colors you see are placeholders, actual font/background colors will be selected later on in the future. */
 /* grid stuff */
-/* nav */
 header {
-  padding-top: 0.4em;
   display: grid;
   grid-auto-flow: column; 
   grid-auto-columns: auto; 
@@ -124,6 +124,11 @@ header {
   grid-template-areas: 
     "pfp searchbar nav order"; 
 }
+/* nav */
+header {
+  padding-top: 0.4em;
+  background-color: var(--clr-background-600);
+}
 .navbar-1{
   justify-self: center; 
   align-self: center; 
@@ -133,6 +138,19 @@ header {
   justify-self: center; 
   align-self: center; 
   grid-area: nav; 
+  display: flex;
+  flex-direction: row;
+  gap: 0.9em;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-3 a {
+  color: var(--fc-black-primary);
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-semibold)
+}
+.navbar-3 a:hover{
+  color: var(--fc-black-hover);
 }
 .sixgradospfp {
   height: 6em;
@@ -142,12 +160,13 @@ header {
   background-image:url(../pics/bg-section1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
 }
 
 .bg-img1 p, .bg-img1 h1 {
   text-align: center;
   margin: 0 auto;
+  color: var(--fc-white-label);
+  /* background-color: var(--clr-neutral-black); */
 }
 
 /* section 2 */
@@ -165,6 +184,9 @@ header {
 .bg-color3 {
   font-size: var(--fs-600);
   background-color: var(--clr-background-900);
+}
+.bg-color3 h3, .bg-color3 p {
+  color: var(--fc-white-primary)
 }
 
 /* section 4 */
@@ -224,6 +246,7 @@ footer a:hover {
 }
 
 /* media queries go here */
+/*mobile*/
 @media (max-width: 40em) {
   header {
       display:flex;
@@ -247,8 +270,29 @@ footer a:hover {
   .footercolumn {
       flex-direction: column;
   }
+  .bg-color2 {
+    display: grid;
+    grid-auto-flow: column; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 24% 24% 24% 24%; 
+    grid-template-rows: 24% 24% 24% 24%; 
+    gap: 1% 2%;
+    grid-template-areas: 
+    ". image image ."
+    ". . . ."
+    ". text text ."
+    ". . . ."; 
+  }
+  .sec2img {
+    grid-area: image;
+  }
+  .sec2text {
+    grid-area: text;
+  }
 
 }
+/* tablet & beyond */
 @media (min-width: 40em) {
   .split {
       flex-direction: row;
