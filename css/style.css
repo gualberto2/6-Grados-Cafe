@@ -256,7 +256,7 @@ footer a:hover {
 
 /* media queries go here */
 /*mobile*/
-@media (max-width: 40em) {
+@media (max-width: 48em) {
   header {
       display:flex;
       flex-direction: column;
@@ -265,6 +265,9 @@ footer a:hover {
   }
   header a {
       text-align: center;
+  }
+  .navbar-3 {
+    gap: 1.3em
   }
   .split {
       flex-direction: column;
@@ -277,6 +280,8 @@ footer a:hover {
   }
   .fflex {
       flex-direction: column;
+      margin-inline: auto;
+      width: min(90%, 70.5rem);
   }
   .footercolumn {
       flex-direction: column;
@@ -286,9 +291,9 @@ footer a:hover {
     grid-auto-flow: column; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
-    grid-template-columns: 24% 24% 24% 24%; 
-    grid-template-rows: 24% 24% 24% 24%; 
-    gap: 1% 2%;
+    grid-template-columns: repeat(25%, 4); 
+    grid-template-rows: repeat(25%, 4); 
+    gap: 0%;
     grid-template-areas: 
     "img img img img"
     "img img img img"
@@ -296,16 +301,18 @@ footer a:hover {
     "img img img img"; 
   }
  .gridsec2 {
-  grid-area: img
+  grid-area: img;
+  align-items: center;
+  justify-items: center;
  }
  .bg-color4 {
   display: grid;
   grid-auto-flow: column; 
   grid-auto-columns: 1fr; 
   grid-auto-rows: 1fr; 
-  grid-template-columns: 24% 24% 24% 24%; 
-  grid-template-rows: 24% 24% 24% 24%; 
-  gap: 1% 2%;
+  grid-template-columns: repeat(25%, 4); 
+  grid-template-rows: repeat(25%, 4); 
+  gap: 0%;
   grid-template-areas: 
   "img img img img"
   "img img img img"
@@ -323,7 +330,7 @@ footer a:hover {
  }
 }
 /* tablet & beyond */
-@media (min-width: 40em) {
+@media (min-width: 48em) {
   .split {
       flex-direction: row;
   }
@@ -355,4 +362,8 @@ footer a:hover {
   .fflex {
       flex-direction: column;
   }
+}
+/* desktops */
+@media (min-width: 80em) {
+  
 }
