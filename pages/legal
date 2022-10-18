@@ -34,13 +34,26 @@
     </section>
 
     <section class="bg-color2">
-            <div class="container ">
+            <div class="container">
                     <div>
-                        <h2 class="text-center">Enjoy Local Taste</h2>
-                        <p>This is a subtext for section 2, not only will 
-                        this include a short description of the owner and 
-                        the business and why it was made, but also a niche 
-                        sentence that describes him in quotations. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ratione porro dolor officia. Ad sed, repudiandae et amet minus expedita ab eaque tempore at quidem.</p>
+                        <h2 class="text-center">Legal Statements</h2>
+                        <p>here are some our legal statements including legal documents</p>
+                    </div>
+                    <div>
+                        <h3>Copyright©</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis officiis vero facere ad, fugit provident, quas molestiae adipisci a tempora commodi temporibus voluptatem autem, libero quasi ducimus ut repellendus! Dolorem voluptatem aliquid ipsam numquam facere id? Ab soluta, amet vel adipisci minima accusantium minus commodi, tenetur a omnis assumenda deserunt iste?</p>
+                    </div>
+                    <div>
+                        <h3>Terms Of Service</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ratione nemo dolorem similique dignissimos esse accusantium accusamus asperiores optio adipisci explicabo doloremque alias, corrupti aperiam commodi cupiditate perferendis harum eaque at sunt molestiae iusto debitis. Vero quisquam fuga rem voluptatem natus nihil soluta consequatur iusto in totam tenetur assumenda sed maxime delectus illo quod quas harum ab doloremque, aperiam iure porro labore dignissimos consequuntur. Eos temporibus exercitationem veritatis in quae, iusto rem, laudantium ipsa aliquid et ea doloremque vero recusandae nobis, illum quia. Totam reprehenderit reiciendis, dolore quae est voluptates ex explicabo. At suscipit labore libero nostrum nesciunt laudantium vel omnis, velit sunt explicabo cumque delectus voluptates, similique minima culpa inventore aliquam! Vero optio praesentium laudantium error nisi unde eum iste deserunt modi dignissimos doloremque expedita ut nobis, quam omnis eveniet suscipit dolores totam? Earum quam, ipsam, esse enim debitis blanditiis quod aliquam architecto accusantium labore excepturi! Praesentium magni, commodi numquam recusandae eos quaerat non ducimus, corrupti quos voluptatum possimus porro voluptas. Beatae laboriosam, qui voluptatum praesentium iste temporibus ad natus a laudantium error illo? Illo quo, eius tempora corrupti delectus aliquam quos accusantium commodi, assumenda odio repellendus enim! Dolore, ducimus!</p>
+                    </div>
+                    <div>
+                        <h3>Privacy Policy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque eum natus blanditiis magnam a dolores veritatis porro fugiat quas.</p>
+                    </div>
+                    <div>
+                        <h3>Contact Us</h3>
+                        <p></p>
                     </div>
             </div>
     </section>
