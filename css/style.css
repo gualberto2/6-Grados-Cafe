@@ -365,5 +365,26 @@ footer a:hover {
 }
 /* desktops */
 @media (min-width: 80em) {
-  
+  .bg-color4 {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: auto; 
+    grid-auto-rows: auto; 
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(8, 1fr); 
+    gap: 24px;
+    grid-template-areas: 
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."; 
+  }
 }
