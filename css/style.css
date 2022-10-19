@@ -197,7 +197,7 @@ header {
     gap: 0;
     flex-direction: column;
     background-color: var(--clr-background-600);
-    width: 75%;
+    width: 100%;
     height: 50%;
     text-align: center;
     transition: 0.3s;
