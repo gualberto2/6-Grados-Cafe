@@ -374,17 +374,17 @@ footer a:hover {
     grid-template-rows: repeat(8, 1fr); 
     gap: 24px;
     grid-template-areas: 
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."
-      ". . . . . . . . . . . ."; 
+    ". . visit visit visit . . . . . . ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hours hours hours ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
+    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . . . . ."
+    ". . . . . . . . . . . ."
+    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
+    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
+    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
+    ". . . . . . . . . . . ."; 
   }
 }
