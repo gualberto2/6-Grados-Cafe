@@ -124,9 +124,41 @@ section {
 header {
   padding-top: 0.4em;
   background-color: var(--clr-background-600);
-  height: 4.0625em;
+  height: 6em;
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-template-areas: 
+      "pfp . opts srch" ;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+}
+
+.navbar-1 {
+  grid-area: pfp;
+  justify-self: center; 
+  align-self: center; 
+}
+.navbar-3 {
+  grid-area: opts;
+  justify-self: center; 
+  align-self: center; 
+  display: flex;
+  flex-direction: row;
+  gap: 1.4em;
+}
+.navbar-3 a {
+  color: var(--fc-black-primary)
+}
+.navbar-3 a:hover {
+  color: var(--fc-black-hover)
+}
+.navbar-4 {
+  grid-area: srch;
+  justify-self: center; 
+  align-self: center; 
 }
 
 .hamburger {
@@ -145,7 +177,7 @@ header {
 }
 
 .sixgradospfp {
-  height: 3.375em;
+  height: 5em;
   width: auto;
 }
 
@@ -195,8 +227,11 @@ header {
   box-shadow: #222c2a;
   margin-bottom: 1em;
 }
-.hrs td {
-  text-align: right;
+.hrs {
+  
+}
+.hrs li {
+  list-style-type: none;
 }
 /* section 5 (footer) */
 .bg-color5 {
@@ -243,10 +278,14 @@ footer a:hover {
 /*mobile*/
 @media (max-width: 48em) {
   header {
-      display:flex;
-      flex-direction: column;
+      display:grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+        "left pfp hmbg";
       padding-bottom: 0.2em;
-      gap: 0.5em;
+  }
+  .navbar-1{
+    grid-area: pfp;
   }
   header a {
       text-align: center;
@@ -304,6 +343,20 @@ footer a:hover {
   "img img img img"
   "img img img img"; 
  }
+ .gglmap iframe{
+  grid-area: googlmap;
+  height: 37.5em;
+  width: 50em;
+}
+.visit {
+  grid-area: visit;
+}
+.hrs {
+  grid-area: hrs;
+}
+.hrslist {
+  grid-area: hrslist;
+}
  .gridsec4 {
   grid-area: img;
  }
@@ -350,27 +403,42 @@ footer a:hover {
 }
 /* desktops */
 @media (min-width: 80em) {
-  .bg-color4 {
+  .sec4grid1{
+    padding-bottom: 1.5em;
+    display: grid; 
+    grid-auto-flow: row; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0%; 
+    grid-template-areas: 
+      "visit hrs"
+  }
+  .visit {
+    grid-area: visit;
+    justify-self: center; 
+    align-self: center;   
+  }
+  .hrs {
+    grid-area: hrs;
+    justify-self: center; 
+    align-self: center;   
+  }
+  .sec4grid2 {
     display: grid; 
     grid-auto-flow: column; 
-    grid-auto-columns: auto; 
-    grid-auto-rows: auto; 
-    grid-template-columns: repeat(8, 1fr); 
-    grid-template-rows: repeat(8, 1fr); 
-    gap: 24px;
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0%; 
     grid-template-areas: 
-    ". . visit visit visit . . . . . . ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hours hours hours ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . hrslist hrslist hrslist ."
-    "googlmap googlmap googlmap googlmap googlmap googlmap googlmap . . . . ."
-    ". . . . . . . . . . . ."
-    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
-    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
-    ". . smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg smallmsg . ."
-    ". . . . . . . . . . . ."; 
+      "smol"
+  }
+  .smol{
+    grid-area: smol;  align-items: center;
+    justify-items: center;
   }
 }
 
