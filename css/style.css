@@ -372,7 +372,7 @@ footer a:hover {
   grid-auto-columns: 1fr; 
   grid-auto-rows: 1fr; 
   grid-template-columns: repeat(1fr, 1); 
-  grid-template-rows: repeat(1fr, 2); 
+  grid-template-rows: 1fr .1fr; 
   gap: 4em;
   grid-template-areas:
   "vst"
@@ -449,6 +449,46 @@ footer a:hover {
   .fflex {
       flex-direction: column;
   }
+  .bg-color4 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: repeat(1fr, 1); 
+    grid-template-rows: 1fr .1fr; 
+    gap: 4em;
+    grid-template-areas:
+    "vst"
+    "sml";
+   }
+   .sec4grid-1 {
+    grid-area: vst;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(1fr, 3); 
+    grid-template-rows: repeat(1fr, 2); 
+    grid-template-areas: 
+    ". visit ."
+    ". hours .";
+   }
+   .visit {
+    grid-area: visit;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2em;
+   }
+   .gglmap {
+    height: 20%;
+      width: 65%;
+      padding-top: 75%
+   }
+   .hrs {
+    grid-area: hours;
+    align-items: center;
+    justify-items: center;
+   }
 }
 /* desktops */
 @media (min-width: 80em) {
@@ -490,7 +530,7 @@ footer a:hover {
     justify-items: center;
   }
   .gglmap {
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 75%
   }
 }
 
