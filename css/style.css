@@ -119,6 +119,26 @@ section {
   flex-direction: row;
 }   
 
+.gglmap {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.gglmap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.gglmap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*Design, most colors you see are placeholders, actual font/background colors will be selected later on in the future.*/
 /* nav */
 header {
@@ -288,10 +308,15 @@ footer a:hover {
     grid-area: pfp;
   }
   header a {
-      text-align: center;
+    text-align: center;
   }
   .navbar-3 {
     gap: 1.3em
+  }
+  .hamburger {
+    grid-area: hmbg;
+    align-items: center;
+    justify-items: center;
   }
   .split {
       flex-direction: column;
@@ -331,34 +356,45 @@ footer a:hover {
  }
  .bg-color4 {
   display: grid;
-  grid-auto-flow: column; 
+  grid-auto-flow: column;
   grid-auto-columns: 1fr; 
   grid-auto-rows: 1fr; 
-  grid-template-columns: repeat(25%, 4); 
-  grid-template-rows: repeat(25%, 4); 
+  grid-template-columns: repeat(1fr, 1); 
+  grid-template-rows: repeat(1fr, 2); 
+  grid-template-areas:
+  "vst"
+  "sml";
+ }
+ .sec4grid-1 {
+  grid-area: vst;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(1fr, 3); 
+  grid-template-rows: repeat(50%, 2); 
   gap: 0%;
   grid-template-areas: 
-  "img img img img"
-  "img img img img"
-  "img img img img"
-  "img img img img"; 
+  ". visit ."
+  ". hours .";
  }
- .gglmap iframe{
-  grid-area: googlmap;
-  height: 37.5em;
-  width: 50em;
-}
-.visit {
+ .visit {
   grid-area: visit;
-}
-.hrs {
-  grid-area: hrs;
-}
-.hrslist {
-  grid-area: hrslist;
-}
- .gridsec4 {
-  grid-area: img;
+  align-items: center;
+  justify-items: center;
+ }
+ .gglmap {
+  height: 40%;
+    width: 80%;
+    padding-top: 75%
+ }
+ .hrs {
+  grid-area: hours;
+  align-items: center;
+  justify-items: center;
+ }
+ .sec4grid-2 {  
+  grid-area: sml; 
  }
  .fflex {
   padding-bottom: 1.4em;
@@ -440,6 +476,9 @@ footer a:hover {
     grid-area: smol;  align-items: center;
     justify-items: center;
   }
+  .gglmap {
+    padding-bottom: 56.25%; /* 16:9 */
+  }
 }
 
 /* js stuff */
@@ -463,8 +502,8 @@ footer a:hover {
 
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 6.45rem;
+    top: -100%;
+    bottom: 6em;
     gap: 0;
     flex-direction: column;
     background-color: var(--clr-background-600);
@@ -472,13 +511,12 @@ footer a:hover {
     height: 50%;
     text-align: center;
     transition: 0.3s;
-  }
-
-  .nav-item {
-    margin: 1rem;
-  }
-
+    gap: 2em;
+    margin-top: 6em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  } 
   .nav-menu.active {
-    left: 0;
+    top: 0;
   }
 }
