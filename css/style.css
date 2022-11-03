@@ -128,21 +128,6 @@ section {
   display: block;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.gglmap {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.gglmap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /*Design, most colors you see are placeholders, actual font/background colors will be selected later on in the future.*/
 /* nav */
 header {
@@ -396,11 +381,6 @@ footer a:hover {
   justify-items: center;
   margin-bottom: 2em;
  }
- .gglmap {
-  height: 50%;
-    width: 80%;
-    padding-top: 75%
- }
  .hrs {
   grid-area: hours;
   align-items: center;
@@ -415,6 +395,10 @@ footer a:hover {
  .footer-heading {
   margin-bottom: 0.2em;
  }
+ .gglmap {
+  height: auto;
+  width: 65%;
+}
 }
 /* tablet & beyond */
 @media (min-width: 48em) {
@@ -479,11 +463,6 @@ footer a:hover {
     justify-items: center;
     margin-bottom: 2em;
    }
-   .gglmap {
-    height: 20%;
-      width: 65%;
-      padding-top: 75%
-   }
    .hrs {
     grid-area: hours;
     align-items: center;
@@ -528,9 +507,6 @@ footer a:hover {
   .smol{
     grid-area: smol;  align-items: center;
     justify-items: center;
-  }
-  .gglmap {
-    padding-top: 75%
   }
 }
 
